@@ -1,8 +1,21 @@
-<nav class="main-menu">
-    <ul>
-        <li><a routerLink="/auth/login">Iniciar sesión</a></li>
-        <li><a routerLink="/pages/dashboard">Inicio</a></li>
-    </ul>
+<header>
+<h1>Banco Romero</h1>
+</header>
+<nav class="main-menu bg-ligth">
+  <ul>
+    <!-- routerLinkActive="active-menu" [routerLinkActiveOptions]="{exact: true}"  -->
+    <li><a routerLink="/auth/login">Inciar sesión</a></li>
+    <li><a routerLink="/pages/dashboard">Mi cuenta</a></li>
+    <li class="dropdown-menu">
+    <a>Transferencias</a>
+      <ul class="submenu">
+        <li><a routerLink="/pages/realizar-transferencias">Realizar Transferencias </a></li>
+        <li><a routerLink="/pages/transferencias-recibidas">Transferencias recibidas</a></li>
+        <li><a routerLink="/pages/transferencias-enviadas">Transferencias enviadas</a></li>
+      </ul>
+    </li>
+    <li><a routerLink="/pages/prestamos">Prestamos</a></li>
+  </ul>
 </nav>
-
+<!-- aquí se recarga el contenido al cambiar de ruta -->
 <router-outlet></router-outlet>

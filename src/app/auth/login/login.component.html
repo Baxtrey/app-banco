@@ -1,1 +1,31 @@
-<p>login works!</p>
+<section>
+  <h1>Iniciar sesión</h1>
+  <div class="login-form">
+    <input [(ngModel)]="email" placeholder="Email" type="email">
+    <input [(ngModel)]="password" placeholder="Contraseña" type="password">
+    <div class="checkbox-container">
+      <input type="checkbox" id="guardeUsuario" name="guardeUsuario" value="guardeUsuario">
+      <label for="guardeUsuario">Guardar usuario</label>
+    </div>
+    <button (click)="enviarLogin()" class="btn btn-primary" type="submit" value="Iniciar sesión">Acceder</button>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p>&copy; 2023 Banco Romero. Todos los derechos reservados.</p>
+      </div>
+      <div class="col-md-6">
+        <ul class="footer-links">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="mailto:marcelino.antonio251198@gmail.com">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+

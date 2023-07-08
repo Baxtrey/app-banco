@@ -1,0 +1,12 @@
+<h1>Prestamos</h1>
+
+<div class="fila-tabla cabecera-tabla">
+    <div class="columna">Nombre</div>
+    <div class="columna">Comisión</div>
+    <div class="columna">Meses</div>
+</div>
+<article class="fila-tabla" *ngFor="let prestamo of prestamos">
+    <div class="columna">{{ prestamo.nombre }}</div>
+    <div class="columna">{{ prestamo.comision | currency:'EUR' }}</div>
+    <div class="columna">{{ prestamo.meses }}</div>
+</article>

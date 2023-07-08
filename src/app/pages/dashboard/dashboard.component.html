@@ -1,1 +1,23 @@
-<p>dashboard works!</p>
+<!-- <div class="greeting">
+    <span>{{ greeting }}</span>, <span class="username">{{ username }}</span>
+  </div>
+  <div class="info">
+    <div class="client-since">Cliente desde: {{ clientSince }}</div>
+    <div class="balance">Saldo: €{{ balance }}</div>
+  </div>
+  <p *ngIf="cliente">Usuario: {{cliente.usuario}}</p> -->
+  <div class="greeting">
+    <span>{{ greeting }}, {{ username }}</span>
+  </div>
+  <div class="info">
+    <div class="balance">Saldo: €{{ balance }}</div>
+  </div>
+  
+  <div class="container">
+    <input type="password" [(ngModel)] ="newPassword">
+    <button class="button cambiar-contrasena" (click)="cambiarContrasena()">Cambiar contraseña</button>
+    <button class="button cerrar-sesion" (click)="cerrarSesion()">Cerrar sesión</button>
+  </div>
+  
+
+  

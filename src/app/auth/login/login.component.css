@@ -1,0 +1,93 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.login-form .checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+
+.login-form .checkbox-container label {
+  margin-left: 25px;
+  font-size: 18px;
+  color: #003366;
+}
+
+.login-form button {
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  padding: 15px 25px;
+  font-size: 21px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+.login-form .checkbox-container label {
+  margin-left: 25px;
+  font-size: 18px;
+  color: #003366;
+  font-weight: bold;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+/* Agregar estilos para el footer */
+
+.footer {
+  background-color: #003366;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+
